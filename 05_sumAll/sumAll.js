@@ -2,7 +2,7 @@ const sumAll = function(a, b) {
     let result = 0
     if (a < 0 || b < 0 || !Number.isInteger(a) || !Number.isInteger(b)) {
         return "ERROR";
-    } else if (b > a) {
+    } else if (b < a) {
         for (i = b; i <= a; i++) {
             result += i;
         }
